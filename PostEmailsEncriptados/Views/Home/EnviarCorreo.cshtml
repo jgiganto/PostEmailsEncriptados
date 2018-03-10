@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "EnviarCorreo";
+}
+
+<h2>Enviar correo con MVC</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label>Para: </label>
+        <input type="email" name="para" />
+    </div>
+    <div>
+        <label>Asunto: </label>
+        <input type="text" name="asunto" />
+    </div>
+    <div>
+        <label>Mensaje: </label>
+        <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
+    </div>
+    @*<div>
+            <label>Seleccione un archivo:</label>
+            <input type="file" name="fichero" size="25" />
+        </div>*@
+
+
+    <div>
+        <button type="submit">Enviar correo</button>
+    </div>
+</form>
+
+<h3 style="color:blue">
+    @ViewBag.Mensaje
+</h3>
+
+<h2 style="color:red">
+    @ViewBag.Error
+</h2>
+
+

@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "EnviarCorreo";
 }
 
@@ -7,17 +6,17 @@
 
 <form method="post" enctype="multipart/form-data">
     <div>
-        <label>Para: </label>
+        <label>Para: </label>&nbsp&nbsp&nbsp&nbsp
         <input type="email" name="para" />
     </div>
     <div>
         <label>Asunto: </label>
         <input type="text" name="asunto" />
-    </div>
+    </div><br /> 
     <div>
-        <label>Mensaje: </label>
-        <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
-    </div>
+        <label>Mensaje: </label><br />
+        <textarea rows="5" class="form-control" name="mensaje" placeholder="Escriba su mensaje"></textarea>
+    </div><br />
     <div>
         <button type="submit">Enviar correo</button>
     </div>
